@@ -1,0 +1,23 @@
+<div class="d-flex justify-content-center mt-3 mb-3">
+  <div class="card col-md-5 shadow-lg">
+    <img src="{{img.image.url}}" class="card-img-top img-fluid" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Título: {{img.title}}</h5>
+      <h5 class="card-title">Descripción: {{img.description}}</h5>
+      <h5 class="card-title">Publicada: {{img.timestamp}}</h5>
+    </div>
+    <div class="d-flex justify-content-start align-items-center m-3">
+      <img src="{{user.photo}}" alt="" class="profile rounded-circle" />
+      <h5 class="card-title mx-2">{{user.name}}</h5>
+    </div>
+    <div class="d-flex justify-content-end align-items-center m-2">
+       <a href="/update/post/{{img._id}}" class="btn btn-info me-3"><i class="fa-solid fa-pencil"></i>
+        Actualizar</a>
+      <a href="/remove/post/{{img._id}}" class="btn btn-danger"><i
+          class="fas fa-trash"
+        ></i>
+        Eliminar</a>
+    </div>
+
+  </div>
+</div>

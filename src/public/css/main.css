@@ -1,0 +1,16 @@
+#index {
+  background: url(../img/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+}
+
+#img_profile {
+  width: 200px;
+  height: 200px;
+}

@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center my-3">
+  <div class="card col-md-4 text-center shadow-lg">
+    <h2 class="card-title mt-3">Mi perfil</h2>
+  <div class="d-flex justify-content-center align-items-center">
+    <img src="{{user.photo}}" class="rounded-circle" alt="" id="img_profile">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Nombre: {{user.name}}</h5>
+    <h6 class="card-title">Correo: {{user.email}}</h6>
+    <h6 class="card-title">Has publicado: {{user.count}} imagenes</h6>
+    <a href="/users/edit-profile" class="mt-3 btn btn-primary">Editar perfil</a>
+  </div>
+</div>
+</div>

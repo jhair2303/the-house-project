@@ -1,0 +1,29 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h4>
+            Cambiar Contraseña
+          </h4>
+        </div>
+        <div class="card-body">
+          <form action="/users/reseat-password" method="post">
+            <div class="form-group mb-3">
+              <input
+                type="text"
+                name="email"
+                placeholder="Usuario"
+                class="form-control",
+                value="{{email}}"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <button class="btn btn-success btn-block">Cambiar Clave</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

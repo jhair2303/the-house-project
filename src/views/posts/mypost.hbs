@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    {{#each images}}
+      <div class="card col-md-4 mt-2 shadow-lg">
+        <img src="{{image.url}}" class="img-fluid mt-3" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">{{title}}</h5>
+          <p class="card-text">{{description}}</p>
+          <a href="/get/post/{{_id}}" class="btn btn-primary"><i
+              class="fas fa-eye"
+            ></i>
+            Ver</a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

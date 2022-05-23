@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-center mt-3">
+  <div class="card col-md-8" id="add">
+  <div class="card-header bg-dark">
+    <h3 class="card-title text-white">
+      <i class="fas fa-image"></i> Subir imagen
+    </h3>
+  </div>
+  <div class="card-body">
+    <form action="/update/post/{{img._id}}" method="post">
+      <div class="form-group mb-3">
+        <input
+          type="text"
+          name="title"
+          class="form-control"
+          placeholder="Título para la imágen"
+          value="{{img.title}}"
+          required
+        />
+      </div>
+      <div class="form-group mb-3">
+        <textarea
+          name="description"
+          rows="3"
+          class="form-control"
+          placeholder="Descripción para la imágen"
+        >{{img.description}}</textarea>
+      </div>
+      <div class="form-group d-flex flex-row-reverse">
+        <button class="btn btn-info">
+          <i class="fa-solid fa-pencil"></i> Actualizar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
